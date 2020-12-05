@@ -6,6 +6,16 @@ body{
     animation: AnimationName 9s ease infinite;
 }
 
+.ayumu{
+    animation: pulse 2s linear infinite;
+    z-index:100;
+    position:absolute;
+    margin:auto;
+    top:50%;
+    transform:scale(2.5);
+
+}
+
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -33,4 +43,19 @@ h1{
     0%{background-position:19% 0%}
     50%{background-position:82% 100%}
     100%{background-position:19% 0%}
+}
+
+@keyframes pulse{
+    from{
+        transform:scale(1);
+        left:0%;
+    }
+    50%{
+        transform:scale(3.5);
+        left:50%;
+    }
+    100%{
+        transform: scale(1);
+        left:95%;
+    }
 }
